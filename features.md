@@ -145,7 +145,7 @@ The authentication feature allows users to securely sign up, log in, log out, an
    - **Status:** Planned (after core task features).
 
 6. **Comments on Tasks**
-   - **User Story:** As a user, I want to add comments to tasks so I can discuss progress or issues.
+   - **User Story:** As a user(manager/asignee), I want to add comments to tasks so I can discuss progress or issues.
    - **Acceptance Criteria:**
      - Comments are threaded and visible to project team.
      - Mentions (@staff) trigger notifications.
@@ -154,7 +154,7 @@ The authentication feature allows users to securely sign up, log in, log out, an
    - **Status:** Pending (depends on Comment feature).
 
 7. **Attachments**
-   - **User Story:** As a staff member, I want to attach files (docs, images) to tasks so I can share relevant materials.
+   - **User Story:** As a team member, I want to attach files (docs, images) to tasks so I can share relevant materials.
    - **Acceptance Criteria:**
      - Support common formats (PDF, images, docs).
      - File size limit (e.g., 10MB).
@@ -179,5 +179,84 @@ The authentication feature allows users to securely sign up, log in, log out, an
      - Alerts if dependencies are violated.
    - **Priority:** Medium.
    - **Status:** Planned.
+
+## Comment
+**Description:** Comments enable threaded discussions on tasks and projects, allowing users to collaborate, ask questions, and provide feedback. Comments integrate with notifications to alert mentioned users.
+
+#### Sub-Features and Details
+1. **Add Comment**
+   - **User Story:** As a user, I want to add a comment to a task or project so I can share updates or ask questions.
+   - **Acceptance Criteria:**
+     - Text field for comment content.
+     - Option to mention users (@username) for notifications.
+     - Comments are saved and displayed in chronological order.
+   - **Priority:** Medium.
+   - **Status:** Pending (build after Task).
+
+2. **View Comments**
+   - **User Story:** As a team member, I want to view all comments on a task/project so I can follow discussions.
+   - **Acceptance Criteria:**
+     - Threaded view with replies.
+     - Pagination for long threads.
+     - Access control: Only project team members.
+   - **Priority:** Medium.
+   - **Status:** Pending.
+
+3. **Edit/Delete Comment**
+   - **User Story:** As a comment author, I want to edit or delete my comments so I can correct mistakes.
+   - **Acceptance Criteria:**
+     - Edit within a time limit (e.g., 15 minutes).
+     - Delete option with confirmation.
+     - Audit log for changes.
+   - **Priority:** Low.
+   - **Status:** Planned.
+
+4. **Mentions and Notifications**
+   - **User Story:** As a mentioned user, I want to be notified when someone mentions me so I can respond quickly.
+   - **Acceptance Criteria:**
+     - @mentions trigger in-app and email notifications.
+     - Integrates with Notification feature.
+   - **Priority:** Medium.
+   - **Status:** Pending (depends on Notification).
+
+## Notification
+**Description:** Notifications inform users about important events like task assignments, project updates, comments, and deadlines. They support multiple channels (in-app, email, SMS) for timely communication.
+
+#### Sub-Features and Details
+1. **In-App Notifications**
+   - **User Story:** As a user, I want to see notifications in the app so I can stay updated without checking email.
+   - **Acceptance Criteria:**
+     - Bell icon with unread count.
+     - List of notifications with timestamps and links to relevant pages.
+     - Mark as read/unread.
+   - **Priority:** High.
+   - **Status:** Pending.
+
+2. **Email/SMS Notifications**
+   - **User Story:** As a user, I want to receive email or SMS alerts for critical updates so I don't miss them.
+   - **Acceptance Criteria:**
+     - Configurable preferences (email, SMS, or both).
+     - Templates for different event types (e.g., task assigned, deadline approaching).
+     - Opt-out option.
+   - **Priority:** Medium.
+   - **Status:** Pending.
+
+3. **Notification Settings**
+   - **User Story:** As a user, I want to customize my notification preferences so I control what I receive.
+   - **Acceptance Criteria:**
+     - Settings page for enabling/disabling types (tasks, comments, projects).
+     - Frequency options (immediate, daily digest).
+     - Save preferences per user.
+   - **Priority:** Low.
+   - **Status:** Planned.
+
+4. **Event Triggers**
+   - **User Story:** As the system, I want to trigger notifications automatically for key events so users are informed.
+   - **Acceptance Criteria:**
+     - Triggers: Task assigned, comment added, deadline near, project updated.
+     - Queue system for reliable delivery.
+   - **Priority:** High.
+   - **Status:** Pending.
+
 
 

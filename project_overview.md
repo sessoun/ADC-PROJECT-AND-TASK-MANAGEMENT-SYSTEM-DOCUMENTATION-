@@ -16,4 +16,4 @@
 | Project | Create and manage projects. | Pending |
 | Task | Manage work items under a project. | Pending |
 | Comment | Add and view comments on tasks/projects. | Pending |
-| Notification | Notify users about activity and updates. Planned |
+| Notification | Notify users about activity and updates. | Planned |
