@@ -257,6 +257,3 @@ The authentication feature allows users to securely sign up, log in, log out, an
      - Queue system for reliable delivery.
    - **Priority:** High.
    - **Status:** Pending.
-
-
-
