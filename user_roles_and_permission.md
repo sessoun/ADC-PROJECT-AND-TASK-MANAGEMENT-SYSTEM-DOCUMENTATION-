@@ -19,14 +19,14 @@
 - **Key Actions:**
   - Create/Delete Projects.
   - Assign/Remove Project Managers.
-  - Reset user passwords, manage accounts.
+  - Reset user passwords, manage accounts*.
   - Access all notifications and comments.
   - Archive projects system-wide.
 
 ### Team Manager Actions and Flow
 **Permissions:** Manage assigned projects, create/assign tasks, oversee team progress.
 - **Typical Flow:**
-  1. Log in as Team Manager.
+  1. Log in as Staff/Team member.
   2. Dashboard: View assigned projects and tasks.
   3. Create Tasks: Under projects, assign to staff.
   4. Monitor Progress: Update task statuses, view comments.
@@ -56,7 +56,7 @@
 ### Notes
 - Roles are assigned during signup or by Admins.
 - Permissions are enforced at the UI and API levels.
-- Flows can overlap (e.g., Managers can also act as Members on tasks).
+- Flows can overlap (e.g., Managers can also act as Members on tasks)*.
 
 
 
